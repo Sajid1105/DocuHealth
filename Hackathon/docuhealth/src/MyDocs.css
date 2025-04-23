@@ -1,0 +1,53 @@
+@import './Dashboard.css';
+
+/* Specific container for MyDocs page */
+.my-docs-container {
+  background-image: url("C:/Users/Ahmed/Downloads/DocuHealth.png"); /* Optional: change to your path */
+  background-size: cover;
+  background-position: center;
+  min-height: calc(100vh - 60px);
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.my-docs-container h1 {
+  font-size: 48px;
+  color: var(--primary-teal);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.my-docs-container p {
+  font-size: 16px;
+  color: var(--primary-teal);
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .my-docs-container h1 {
+    font-size: 36px;
+  }
+
+  .my-docs-container {
+    padding: 40px 20px;
+  }
+}
+.docs-list {
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.doc-item {
+  margin-bottom: 10px;
+}
+
+.upload-date {
+  margin-left: 10px;
+  font-size: 0.9rem;
+  color: gray;
+}

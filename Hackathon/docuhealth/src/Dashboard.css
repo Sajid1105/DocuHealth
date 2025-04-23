@@ -1,0 +1,92 @@
+/* Dashboard.css */
+
+/* Color variables */
+:root {
+    --primary-teal: #1d6363;
+    --white: #ffffff;
+    --black: #333333;
+}
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: var(--black);
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: var(--primary-teal);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+.menu a:hover {
+    opacity: 0.8;
+}
+
+/* Main Dashboard Container with background image */
+.dashboard-container {
+    background-image: url("C:/Users/Ahmed/Downloads/DocuHealth.png"); /* Replace path if needed */
+    background-size: cover;
+    background-position: center;
+    min-height: calc(100vh - 60px);
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Dashboard Text Styling (no white background) */
+.dashboard-container h1 {
+    font-size: 48px;
+    color: var(--primary-teal);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.dashboard-container p {
+    font-size: 16px;
+    color: var(--primary-teal);
+    margin-bottom: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dashboard-container h1 {
+        font-size: 36px;
+    }
+
+    .dashboard-container {
+        padding: 40px 20px;
+    }
+}

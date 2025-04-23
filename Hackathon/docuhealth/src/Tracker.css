@@ -1,0 +1,38 @@
+@import './Dashboard.css';
+
+/* Tracker container styling */
+.tracker-container {
+  background-image: url("C:/Users/Ahmed/Downloads/DocuHealth.png"); /* Update with your actual image path */
+  background-size: cover;
+  background-position: center;
+  min-height: calc(100vh - 60px);
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tracker-container h1 {
+  font-size: 48px;
+  color: var(--primary-teal);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.tracker-container p {
+  font-size: 16px;
+  color: var(--primary-teal);
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .tracker-container h1 {
+    font-size: 36px;
+  }
+
+  .tracker-container {
+    padding: 40px 20px;
+  }
+}

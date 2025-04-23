@@ -1,0 +1,180 @@
+:root {
+    --primary-teal: #1d6363;
+    --light-teal: #2a7a7a;
+    --white: #ffffff;
+    --black: #333333;
+    --light-gray: #f5f5f5;
+    --mid-gray: #e0e0e0;
+    --text-gray: #555555;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+    color: var(--black);
+  }
+  
+  .auth-container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('DocuHealth.png'); /* update for production */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: var(--primary-teal);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .menu a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+  }
+  
+  .menu a:hover {
+    opacity: 0.8;
+  }
+  
+  /* Signup Card */
+  .auth-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 62px);
+    padding: 40px 20px;
+  }
+  
+  .auth-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Tabs */
+  .auth-tabs {
+    display: flex;
+    border-bottom: 1px solid var(--mid-gray);
+  }
+  
+  .tab-btn {
+    flex: 1;
+    background: none;
+    border: none;
+    padding: 18px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-gray);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .tab-btn.active {
+    color: var(--primary-teal);
+    border-bottom: 3px solid var(--primary-teal);
+  }
+  
+  /* Signup Form */
+  .signup-form {
+    padding: 30px;
+  }
+  
+  .signup-form h2 {
+    color: var(--primary-teal);
+    margin-bottom: 8px;
+    font-size: 24px;
+  }
+  
+  .form-subtitle {
+    color: var(--text-gray);
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: var(--text-gray);
+    font-weight: 500;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--mid-gray);
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-group input:focus {
+    outline: none;
+    border-color: var(--primary-teal);
+  }
+  
+  .terms {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+  
+  .terms a {
+    color: var(--primary-teal);
+    text-decoration: none;
+  }
+  
+  .terms a:hover {
+    text-decoration: underline;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--primary-teal);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: var(--light-teal);
+  }
+  
